@@ -134,7 +134,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf $source/debian7/nginx.conf
 mkdir -p /home/vps/public_html
-echo "<pre>Modified by MuLuu09 atau (+601131731782)</pre>" > /home/vps/public_html/index.html
+echo "<pre>Modified by SYAHZ86</pre>" > /home/vps/public_html/index.html
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
 wget -O /etc/nginx/conf.d/vps.conf $source/debian7/vps.conf
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
@@ -142,9 +142,9 @@ service php5-fpm restart
 service nginx restart
 
 #PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
-#useradd -M -s /bin/false deenie11
-#echo "deenie11:$PASS" | chpasswd
-#echo "deenie11" >> pass.txt
+#useradd -M -s /bin/false syahz86
+#echo "syahz86:$PASS" | chpasswd
+#echo "syahz86" >> pass.txt
 #echo "$PASS" >> pass.txt
 #cp pass.txt /home/vps/public_html/
 #rm -f /root/pass.txt
@@ -383,8 +383,8 @@ rm ./ovpn.sh
 
 usermod -s /bin/false test1
 echo "test1:test1" | chpasswd
-useradd -s /bin/false -M syahz86
-echo "syahz86:123456" | chpasswd
+useradd -s /bin/false -M retard
+echo "retard:123456" | chpasswd
 # finishing
 chown -R www-data:www-data /home/vps/public_html
 service cron restart
