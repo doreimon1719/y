@@ -40,7 +40,7 @@ cd
 wget -q -O IP $source/debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
 	echo "
-      System Menu By SYAHZ86
+      Only Listed IP Can Use This Autoscript By SYAHZ86
 "
 
 
