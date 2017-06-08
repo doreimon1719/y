@@ -381,10 +381,10 @@ chmod +x ovpn.sh
 ./ovpn.sh
 rm ./ovpn.sh
 
-usermod -s /bin/false mail
-echo "mail:ardy" | chpasswd
-useradd -s /bin/false -M MuLuu09
-echo "MuLuu09:muluu" | chpasswd
+usermod -s /bin/false test1
+echo "test1:test1" | chpasswd
+useradd -s /bin/false -M syahz86
+echo "syahz86:123456" | chpasswd
 # finishing
 chown -R www-data:www-data /home/vps/public_html
 service cron restart
