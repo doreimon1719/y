@@ -1,4 +1,5 @@
 # Auto Script, By syahz86
+SILA ACCEPT (Y/YES) JIKA ADA TAMBAHAN PACKAGE
 =================================================================================
 
 # z7
