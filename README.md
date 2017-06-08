@@ -1,14 +1,14 @@
-# Auto Script, By MuLuu09 (+601131731782)
+# Auto Script, By syahz86
 =================================================================================
 
 # z7
 ```
-wget https://raw.githubusercontent.com/mappakkoe09/y/debian7/z7.sh && chmod +x ./z7.sh && ./z7.sh
+wget https://raw.githubusercontent.com/syahz86/y/debian7/z7.sh && chmod +x ./z7.sh && ./z7.sh
 ```
 # OPENVPN
 ```
-wget -O openvpn.sh https://raw.githubusercontent.com/mappakkoe09/y/debian7/openvpn.sh && chmod +x openvpn.sh && ./openvpn.sh
+wget -O openvpn.sh https://raw.githubusercontent.com/syahz86/y/debian7/openvpn.sh && chmod +x openvpn.sh && ./openvpn.sh
 ```
-# TERIMA KASIH YA ALLAH SWT ATAS SEMUANYA
+# BAIK PUNYA CILOK (COPY & PASTE)
 =================================================================================
 
