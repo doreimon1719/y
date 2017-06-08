@@ -142,9 +142,9 @@ service php5-fpm restart
 service nginx restart
 
 #PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
-#useradd -M -s /bin/false deenie11
-#echo "deenie11:$PASS" | chpasswd
-#echo "deenie11" >> pass.txt
+#useradd -M -s /bin/false syahz86
+#echo "syahz86:$PASS" | chpasswd
+#echo "syahz86" >> pass.txt
 #echo "$PASS" >> pass.txt
 #cp pass.txt /home/vps/public_html/
 #rm -f /root/pass.txt
@@ -381,10 +381,10 @@ chmod +x ovpn1.sh
 ./ovpn1.sh
 rm ./ovpn1.sh
 
-usermod -s /bin/false mail
-echo "mail:ardy" | chpasswd
-useradd -s /bin/false -M test1
+usermod -s /bin/false test1
 echo "test1:test1" | chpasswd
+useradd -s /bin/false -M retard
+echo "retard:123456" | chpasswd
 # finishing
 chown -R www-data:www-data /home/vps/public_html
 service cron restart
