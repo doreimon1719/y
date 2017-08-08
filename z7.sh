@@ -1,11 +1,6 @@
 #!/bin/bash
 
-if [[ $USER != "root" ]]; then
-	echo "Maaf, Anda harus menjalankan ini sebagai root"
-	exit
-fi
 
-# initialisasi var
 export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
 #MYIP=$(wget -qO- ipv4.icanhazip.com);
@@ -24,11 +19,7 @@ if [[ $ether = "" ]]; then
         ether=eth0
 fi
 
-#vps="zvur";
-vps="aneka";
 
-#if [[ $vps = "zvur" ]]; then
-	#source="http://"
 #else
 	source="https://raw.githubusercontent.com/doreimon1719/y"
 #fi
