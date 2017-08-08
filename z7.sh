@@ -37,18 +37,18 @@ vps="aneka";
 cd
 
 # check registered ip
-wget -q -O IP $source/debian7/IP.txt
-if ! grep -w -q $MYIP IP; then
-	echo "
-      Only Listed IP Can Use This Autoscript By SYAHZ86
-"
+#wget -q -O IP $source/debian7/IP.txt
+#if ! grep -w -q $MYIP IP; then
+#	echo "
+#      Only Listed IP Can Use This Autoscript By SYAHZ86
+#"
 
 
 
-	rm /root/IP
-	rm -f /root/IP
-	exit
-fi
+#	rm /root/IP
+#	rm -f /root/IP
+#	exit
+#fi
 
 # disable ipv6
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
