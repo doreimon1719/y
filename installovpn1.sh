@@ -28,25 +28,13 @@ vps="aneka";
 #if [[ $vps = "zvur" ]]; then
 	#source="http://"
 #else
-	source="https://raw.githubusercontent.com/syahz86/y"
+	source="https://github.com/Vpaproject/y"
 #fi
 
 # go to root
 cd
 
-# check registered ip
-wget -q -O IP $source/debian7/IP.txt
-if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
-	if [[ $vps = "zvur" ]]; then
-		echo "Hubungi: editor SYAHZ86"
-	else
-		echo "Hubungi: editor SYAHZ86"
-	fi
-	rm /root/IP
-	rm -f /root/IP
-	exit
-fi
+
 
 
 
