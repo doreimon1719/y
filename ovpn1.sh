@@ -30,31 +30,20 @@ vps="aneka";
 #if [[ $vps = "zvur" ]]; then
 	#source="http://"
 #else
-	source="https://raw.githubusercontent.com/syahz86/y"
+	source="https://github.com/Vpaproject/y"
 #fi
 
 # go to root
 cd
 
-# check registered ip
-wget -q -O IP $source/debian7/IP.txt
-if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
-	if [[ $vps = "zvur" ]]; then
-		echo "Hubungi: editor SYAHZ86"
-	else
-		echo "Hubungi: editor SYAHZ86"
-	fi
-	rm /root/IP
-	rm -f /root/IP
-	exit
-  fi
+
+
 
 apt-get -y --purge remove openvpn*;
 # install openvpn
 #myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 apt-get install openvpn -y
-wget -O /etc/openvpn/openvpn.tar $source/debian7/openvpn.tar
+wget -O /etc/openvpn/openvpn.tar $source/debian7/openvpn-debian.tar
 cd /etc/openvpn/
 tar xf openvpn.tar
 wget -O /etc/openvpn/1194.conf $source/debian7/tcp56.conf
